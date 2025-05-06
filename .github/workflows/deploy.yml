@@ -29,8 +29,9 @@ jobs:
 
       - name: Zip Lambda code
         run: |
-          cd "lambda tests"
-          zip -r ../lambda.zip .
+    
+          cd lambda_function
+          zip -r ../lambda.zip lambda_function.py
 
       - name: Deploy to Lambda
         run: |
