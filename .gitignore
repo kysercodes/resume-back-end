@@ -1,0 +1,16 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Lambda build artifact
+lambda.zip
+
+# Local environment files
+.env
+*.log
+
+# VSCode/editor-specific
+.vscode/
+*.swp
+
