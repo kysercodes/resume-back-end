@@ -2,10 +2,7 @@ name: Deploy Backend to Lambda
 
 on:
   push:
-    paths:
-      - 'lambda tests/**'
-      - '.github/workflows/deploy-backend.yml'
-      - 'terraform/**'
+    
     branches:
       - master
 
