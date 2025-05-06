@@ -22,9 +22,11 @@ def lambda_handler(event, context):
         ExpressionAttributeNames={"#c": "count"},
         ExpressionAttributeValues={":inc": 1},
         ReturnValues="UPDATED_NEW"
+    
     )
+    print("Updated visitor count:", response["Attributes"]["count"])
 
-    # Return result as JSON-safe
+    # Return result as JSON-safe i changed
     return {
         "statusCode": 200,
         "headers": {"Access-Control-Allow-Origin": "*"},
